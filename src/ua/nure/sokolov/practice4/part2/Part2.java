@@ -1,12 +1,11 @@
 package ua.nure.sokolov.practice4.part2;
 
-import org.omg.CORBA.PRIVATE_MEMBER;
 import ua.nure.sokolov.practice4.GetInputFile;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
-import java.util.Random;
+
 public class Part2 {
 
     private GetInputFile classGetIput = new GetInputFile();
@@ -41,7 +40,6 @@ public class Part2 {
     public void createFilePart2(String nameTxt, int[] fileArray){
 
         try(PrintWriter out = new PrintWriter(new FileOutputStream(nameTxt))) {
-//            out.write(nameFirstWordInFile);
 
             for (int i = 0; i < fileArray.length; ++i)
             {
@@ -55,9 +53,9 @@ public class Part2 {
     }
 
     public int[] readFile(String nameFile){
-        String textOfpart2 = classGetIput.getInput(nameFile);
-        System.out.println(textOfpart2);
-        String[] str = textOfpart2.split(" ");
+        String textOfPart2 = classGetIput.getInput(nameFile);
+        System.out.println(textOfPart2);
+        String[] str = textOfPart2.split(" ");
         int[] arr = new int[10];
         for (int j = 0; j < str.length; j++){
             arr[j] = Integer.parseInt(str[j]);

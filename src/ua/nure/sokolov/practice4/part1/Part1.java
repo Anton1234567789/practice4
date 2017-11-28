@@ -17,8 +17,8 @@ public class Part1 {
         StringBuilder result = new StringBuilder("");
         String INPUT_FILE = classGetInputFile.getInput("part1.txt");
 
-        String regexp = "(\\w+)(\\W+)";
-        Pattern pattern = Pattern.compile(regexp, Pattern.UNICODE_CHARACTER_CLASS);
+        String regexp = "(?mU)(\\w+)(\\W+)";
+        Pattern pattern = Pattern.compile(regexp);
         Matcher matcher  = pattern.matcher(INPUT_FILE);
 
         while (matcher.find()){
