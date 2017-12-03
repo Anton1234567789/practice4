@@ -4,6 +4,7 @@ import ua.nure.sokolov.practice4.part1.Part1;
 import ua.nure.sokolov.practice4.part2.Part2;
 import ua.nure.sokolov.practice4.part3.Part3;
 import ua.nure.sokolov.practice4.part4.Part4;
+import ua.nure.sokolov.practice4.part5.Part5;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -25,11 +26,10 @@ public class Demo {
         System.setIn(STD_IN);
         System.out.println("=========================== PART4");
         Part4.main(args);
-//        System.out.println("=========================== PART5");
-//// set the mock input
-//        System.setIn(new ByteArrayInputStream("table ru\ntable en\napple
-//                ru".getBytes(ENCODING)));
-//                Part5.main(args);
+        System.out.println("=========================== PART5");
+// set the mock input
+        System.setIn(new ByteArrayInputStream("table ru\ntable en\napple ru".getBytes(ENCODING)));
+                Part5.main(args);
 // restore the standard input
     }
 }
